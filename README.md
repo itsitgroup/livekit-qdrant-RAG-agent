@@ -11,13 +11,13 @@ This repository is a forked version of the original Cartesia Voice Agent example
 
 ---
 
-## Original README
+## Original README (modified requirements and instructions)
 
 This is a demo of a LiveKit [Voice Pipeline Agent](https://docs.livekit.io/agents/voice-agent/voice-pipeline/) using [Cartesia](https://www.cartesia.ai/) and GPT-4o-mini.
 
 The example includes a custom Next.js frontend and Python agent.
 
-## Live Demo
+## Live Demo (original w/o RAG and Qdrant)
 
 [Live Demo](https://cartesia-assistant.vercel.app/)
 
@@ -33,6 +33,7 @@ The example includes a custom Next.js frontend and Python agent.
 - Cartesia API key (for speech synthesis)
 - OpenAI API key (for LLM)
 - Deepgram API key (for speech-to-text)
+- Qdrant API key, Cluster_ID, and URL (for semantic search)
 
 ### Frontend
 
@@ -54,7 +55,7 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-# This will ingest the documents into the Qdrant Vector Database (Only to Run Once)
+# This will ingest the document into the Qdrant Vector Database (Only to Run Once)
 python injest.py
 
 python main.py dev
