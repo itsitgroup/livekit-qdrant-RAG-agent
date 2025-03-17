@@ -13,6 +13,8 @@ This repository is a forked version of the original Cartesia Voice Agent example
 
 - The `thinking_messages` in `agent\main.py` aren't being used at all. They should be used while the agent is processing the user's query.
 
+*Feel Free to contribute to this repository.*
+
 ---
 
 ## Original README (modified requirements and instructions)
