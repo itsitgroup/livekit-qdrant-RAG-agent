@@ -151,6 +151,7 @@ async def entrypoint(ctx: JobContext):
             role="system",
             text=("You are a voice assistant. Answer questions using the knowledge base when appropriate. "
                   "If you don't know an answer about Its IT Group, you can call the retrieve_info function to search for it. "
+                  "Always try to to keep the answers concise and under 3 sentences. "
                   "If any Question comes regarding Its IT Group, search the knowledge base.")
         )
     )
