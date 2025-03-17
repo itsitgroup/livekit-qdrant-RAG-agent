@@ -9,6 +9,10 @@ This repository is a forked version of the original Cartesia Voice Agent example
 - **Enhanced Logging:** Improved logging throughout ingestion and retrieval processes to assist debugging and ensure visibility into internal operations.
 - **Async Handling:** Ensured all blocking I/O operations (e.g., Qdrant queries, OpenAI embedding requests) run in separate threads (`asyncio.to_thread`) to maintain asynchronous efficiency.
 
+## Things to improve
+
+- The `thinking_messages` in `agent\main.py` aren't being used at all. They should be used while the agent is processing the user's query.
+
 ---
 
 ## Original README (modified requirements and instructions)
